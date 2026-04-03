@@ -1,0 +1,28 @@
+=== CLASS IMBALANCE REPORT ===
+
+Per-Label Frequencies:
+Center    : 0.342
+Donut     : 0.316
+Edge_Loc  : 0.342
+Edge_Ring : 0.316
+Loc       : 0.473
+Near_Full : 0.004
+Scratch   : 0.500
+Random    : 0.023
+
+Per-label imbalance ratio: 127.52
+
+Total unique combinations: 38
+Combination imbalance ratio: 13.42
+
+Top 10 Combinations:
+[1 0 1 0 0 0 1 0] -> 2000
+[0 0 0 0 0 0 0 0] -> 1000
+[0 0 0 0 1 0 1 0] -> 1000
+[0 0 0 0 0 0 1 0] -> 1000
+[0 0 0 1 0 0 0 0] -> 1000
+[0 0 0 1 0 0 1 0] -> 1000
+[0 0 0 1 1 0 1 0] -> 1000
+[0 0 0 0 1 0 0 0] -> 1000
+[0 0 1 0 1 0 0 0] -> 1000
+[0 0 1 0 1 0 1 0] -> 1000
