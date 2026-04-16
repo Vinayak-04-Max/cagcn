@@ -1,0 +1,23 @@
+=== FINAL TEST REPORT ===
+              precision    recall  f1-score   support
+
+      Center       1.00      1.00      1.00      1287
+       Donut       1.00      1.00      1.00      1188
+    Edge_Loc       0.98      0.98      0.98      1287
+   Edge_Ring       0.98      0.99      0.99      1188
+         Loc       0.99      0.96      0.97      1782
+   Near_Full       0.99      0.99      0.99      1092
+     Scratch       0.98      0.96      0.97      1881
+      Random       0.99      0.99      0.99      1115
+        None       0.98      1.00      0.99       121
+
+   micro avg       0.99      0.98      0.99     10941
+   macro avg       0.99      0.99      0.99     10941
+weighted avg       0.99      0.98      0.99     10941
+ samples avg       0.99      0.99      0.99     10941
+
+=== GLOBAL METRICS ===
+Subset accuracy (exact match): 0.9537
+Hamming loss (fraction of wrong bits): 0.0061
+Micro F1 (bitwise): 0.9852
+Macro F1 (bitwise): 0.9870

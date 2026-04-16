@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GhostNet CAGCN Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <p class="eyebrow">Wafer Intelligence</p>
+          <h1>GhostNet CAGCN Dashboard</h1>
+          <p class="sidebar__copy">
+            Select a wafer from the gallery and send it through the model with a
+            darker, production-style interface instead of the Streamlit layout.
+          </p>
+        </div>
+
+        <div class="sidebar__actions">
+          <button id="resampleButton" class="button button--primary">Resample Wafers</button>
+          <p id="statusText" class="status">Loading wafer samples...</p>
+        </div>
+
+        <div id="waferGrid" class="wafer-grid"></div>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Inference Results</p>
+            <h2>Prediction summary and confidence traces</h2>
+            <p class="hero__copy">
+              The frontend calls the Node API, and the Node API forwards the
+              request to the Python inference service that owns the TensorFlow model.
+            </p>
+          </div>
+          <button id="predictButton" class="button" disabled>Run Inference</button>
+        </section>
+
+        <section class="result-card">
+          <div class="result-card__header">
+            <div>
+              <p class="eyebrow">Selected Labels</p>
+              <h3 id="labelsTitle">Choose a wafer to begin</h3>
+            </div>
+            <div id="selectedMeta" class="selected-meta">No wafer selected</div>
+          </div>
+          <div id="labelBadge" class="label-badge">No prediction yet</div>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel">
+            <div class="panel__header">
+              <p class="eyebrow">Binary Output</p>
+              <h3>Predicted classes</h3>
+            </div>
+            <div id="binaryChart" class="metric-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel__header">
+              <p class="eyebrow">Probability Curve</p>
+              <h3>Class confidence</h3>
+            </div>
+            <div id="probabilityChart" class="metric-list metric-list--wide"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+* text=auto
+
+# Keep notebook and model/data artifacts as binary
+*.ipynb binary
+*.npz binary
+*.npy binary
+*.h5 binary
+*.png binary

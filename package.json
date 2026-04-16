@@ -1,0 +1,22 @@
+{
+  "name": "wafer-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dark-themed wafer defect dashboard with Node gateway and FastAPI/TensorFlow inference",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "check": "node --check server.js && node --check src/server/app.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "wafer",
+    "defect-detection",
+    "fastapi",
+    "tensorflow",
+    "nodejs-dashboard"
+  ]
+}
