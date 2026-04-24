@@ -8,6 +8,9 @@ A production-style wafer defect inference dashboard with:
 
 The repository preserves the original research and data assets while providing a cleaner deployable app workflow.
 
+## Dataset
+- Wafer_Map_Datasets_1.npz
+  
 ## Project structure
 
 ```text
